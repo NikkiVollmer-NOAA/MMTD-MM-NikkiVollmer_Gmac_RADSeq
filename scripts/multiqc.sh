@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH -D /scratch2/nvollmer/log/array_jobs
+#SBATCH -D home/nvollmer/GmacPopGen/log/array_jobs
 #SBATCH --mail-type=END
 #SBATCH --mail-user=nicole.vollmer@noaa.gov
 #SBATCH --partition=standard
