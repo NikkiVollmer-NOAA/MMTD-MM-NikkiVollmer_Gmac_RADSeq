@@ -9,7 +9,7 @@
 #SBATCH --job-name=merge_bams
 #SBATCH --output=merge_bams_%A_%a.out
 #SBATCH --error=merge_bams_%A_%a.err
-#SBATCH --array=0-999  # generous upper bound; auto-trimmed to actual # of individuals below
+#SBATCH --array=0-316%25  # generous upper bound; auto-trimmed to actual # of individuals below
 
 # ------------------------------------------------------------------------------
 # Purpose: Merge each individual's per-lane BAMs (produced by bwa_align_bashonly.slurm,
