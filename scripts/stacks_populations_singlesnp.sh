@@ -2,9 +2,9 @@
 #SBATCH -D /home/nvollmer/GmacPopGen/log
 #SBATCH --mail-type=END
 #SBATCH --mail-user=nicole.vollmer@noaa.gov
-#SBATCH --partition=standard
+#SBATCH --partition=medmem
 #SBATCH --cpus-per-task=16
-#SBATCH --mem=60G
+#SBATCH --mem=170G
 #SBATCH --time=12:00:00
 #SBATCH --job-name=populations_singlesnp
 #SBATCH --output=populations_singlesnp_%j.out
