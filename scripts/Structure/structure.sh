@@ -4,7 +4,7 @@
 #SBATCH --mail-type=END
 #SBATCH -o %x_%j.out
 #SBATCH -e %x_%j.err
-#SBATCH -D /home/nvollmer/GmacPopoGen/log/structure
+#SBATCH -D /home/nvollmer/GmacPopGen/log/structure
 #SBATCH --array=1-100%10
 #SBATCH --mem=16G
 #SBATCH --partition=standard
