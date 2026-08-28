@@ -30,7 +30,7 @@ JAVA8=/usr/lib/jvm/java-1.8.0-openjdk/bin/java
 
 VCF=/home/nvollmer/GmacPopGen/vcf_filtering/step3_final_maf05.recode.vcf
 SPID=/home/nvollmer/GmacPopGen/vcf_filtering/vcf2structure_snps.spid
-OUTDIR=/home/nvollmer/structure
+OUTDIR=/home/nvollmer/GmacPopGen/structure
 OUTFILE=${OUTDIR}/run1.txt
 
 mkdir -p "$OUTDIR"
