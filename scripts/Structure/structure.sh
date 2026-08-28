@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH --job-name STRUCT
+#SBATCH --job-name structure
 #SBATCH --mail-user=nicole.vollmer@noaa.gov
 #SBATCH --mail-type=END
 #SBATCH -o %x_%j.out
@@ -15,7 +15,7 @@ eval "$(mamba shell hook --shell bash)"
 # Activate the mamba environment containing structure
 mamba activate structure-2.3.4
 
-cd ~/structure
+cd ~/GmacPopGen/structure
 
 # Read line $SLURM_ARRAY_TASK_ID from tasks.txt
 K=$(sed -n "${SLURM_ARRAY_TASK_ID}p" tasks.txt | cut -f1)
