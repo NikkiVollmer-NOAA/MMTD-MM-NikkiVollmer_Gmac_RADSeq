@@ -26,7 +26,7 @@
 # step-by-step protocol rather than a single combined filter call.
 # ------------------------------------------------------------------------------
 
-module load bio/vcftools/0.1.17
+module load bio/vcftools/0.1.16
 
 WORKDIR=/home/nvollmer/GmacPopGen/vcf_filtering
 INPUT_VCF=/home/nvollmer/GmacPopGen/stacks_output_singlesnp/populations.snps.vcf
