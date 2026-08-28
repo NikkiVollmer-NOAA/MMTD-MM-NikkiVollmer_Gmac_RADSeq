@@ -29,7 +29,10 @@ OUTFILE=${OUTDIR}/run1.txt
 
 mkdir -p "$OUTDIR"
 
-PGDSpider2-cli -Xmx8g \
+# The pgdspider module sets $PGDSPIDER to point to the jar file directly,
+# rather than putting a PGDSpider2-cli binary on PATH -- so it needs to be
+# invoked via java -jar rather than as a standalone command.
+java -Xmx8g -jar "$PGDSPIDER" \
     -inputfile "$VCF" -inputformat VCF \
     -outputfile "$OUTFILE" -outputformat STRUCTURE \
     -spid "$SPID"
